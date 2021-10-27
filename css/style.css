@@ -5,3 +5,170 @@ html {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url(../font/Poppins-Medium.ttf);
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../font/Poppins-Bold.ttf);
+  font-display: auto;
+}
+
+body {
+  font-family: "Poppins";
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+	overflow-x: hidden;
+}
+
+.nav-size {
+  height: 40px;
+  width: 1108px;
+  margin-top: 48px;
+}
+
+.navbar-brand {
+  height: 32.67399978637695px;
+  width: 120.04266357421875px;
+
+  background: url(../images/logo.svg) no-repeat center;
+}
+
+.nav-link {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #9e9aa8;
+}
+
+.nav-link:hover {
+  color: #34313d;
+}
+
+.nav-btn {
+  height: 40px;
+  width: 105px;
+  background: #2bd0d0;
+  border-radius: 28px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.nav-btn:hover {
+  background: #9ae3e3;
+  color: #ffffff;
+  border: none;
+}
+
+.top-container {
+  width: 1108px;
+  height: auto;
+}
+
+.top-left-box {
+  height: 351px;
+  width: 565px;
+  box-sizing: border-box;
+  margin-top: 139px;
+}
+
+.top-left-box > h1 {
+	font-weight: 700;
+	font-size: 76px;
+	line-height: 90px;
+	letter-spacing: -3px;
+}
+
+.top-left-box > p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  color: #9e9aa8;
+  margin-top: 5px;
+}
+
+.top-left-box > button {
+  height: 56px;
+  width: 197px;
+  background: #2bd0d0;
+  border-radius: 28px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  margin-top: 38px;
+}
+
+.top-left-box > button:hover {
+  background: #9ae3e3;
+  color: #ffffff;
+}
+
+.top-right-box {
+  position: absolute;
+  height: 482px;
+  width: 733px;
+  left: 830px;
+  top: 166px;
+
+  background: url(../images/illustration-working.svg);
+}
+
+
+.search-box{
+	height: 168px;
+width: 1110px;
+border-radius: 10px;
+margin: 140px 0 120px 0;
+background: #3A3054 url(../images/bg-shorten-desktop.svg);
+}
+
+.inp-search{
+height: 64px;
+width: 769px;
+border-radius: 10px;
+background: #FFFFFF;
+box-sizing: border-box;
+border-radius: 10px;
+font-weight: 500;
+font-size: 20px;
+line-height: 36px;
+letter-spacing: 0.15px;
+color: #34313D;
+mix-blend-mode: normal;
+padding-left: 32px;
+}
+
+.btn-search{
+	height: 64px;
+width: 188px;
+border-radius: 10px;
+background: #2BD0D0;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+color: #FFFFFF;
+}
+
+.btn-search:hover{
+	background: #9AE3E3;
+	color: #FFFFFF;
+}
+
+#error-ms{
+	display: none;
+	font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+letter-spacing: 0.109091px;
+color: #F46363;
+margin-top: 8px;
+}
