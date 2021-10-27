@@ -2,6 +2,14 @@ document.querySelector('form').onsubmit = handleSubmit;
 
 const input = document.getElementById("inp");
 
+let errorDiv = document.getElementById("error-ms");
+
+input.addEventListener('focus',
+	() => {
+		errorDiv.innerHTML = "";
+		errorDiv.style.display = "none";
+	});
+
 function handleSubmit(e) {
 	e.preventDefault();
 
@@ -14,13 +22,22 @@ function ValidURL(str) {
 	var regex = new RegExp(expression);
 
 	if (!regex.test(str)) {
-		document.getElementById("error-ms").style.display = "block";
-		
+
+		errorMessage("Please add a link")
+
 	} else {
 
 		getUrl();
-		
+
 	}
+}
+
+function errorMessage(message) {
+
+	errorDiv.style.display = "block";
+
+	errorDiv.innerHTML = message;
+
 }
 
 function getUrl() {
@@ -38,8 +55,8 @@ function getUrl() {
 
 		})
 		.catch(error => {
-			alert("Error: We were unable to shorten your link");
-			console.log(error);
+
+			errorMessage(error)
 
 		});
 

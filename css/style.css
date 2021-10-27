@@ -23,7 +23,7 @@ body {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-	overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .nav-size {
@@ -80,10 +80,10 @@ body {
 }
 
 .top-left-box > h1 {
-	font-weight: 700;
-	font-size: 76px;
-	line-height: 90px;
-	letter-spacing: -3px;
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 90px;
+  letter-spacing: -3px;
 }
 
 .top-left-box > p {
@@ -122,53 +122,52 @@ body {
   background: url(../images/illustration-working.svg);
 }
 
-
-.search-box{
-	height: 168px;
-width: 1110px;
-border-radius: 10px;
-margin: 140px 0 120px 0;
-background: #3A3054 url(../images/bg-shorten-desktop.svg);
+.search-box {
+  height: 168px;
+  width: 1110px;
+  border-radius: 10px;
+  margin: 140px 0 120px 0;
+  background: #3a3054 url(../images/bg-shorten-desktop.svg);
 }
 
-.inp-search{
-height: 64px;
-width: 769px;
-border-radius: 10px;
-background: #FFFFFF;
-box-sizing: border-box;
-border-radius: 10px;
-font-weight: 500;
-font-size: 20px;
-line-height: 36px;
-letter-spacing: 0.15px;
-color: #34313D;
-mix-blend-mode: normal;
-padding-left: 32px;
+.inp-search {
+  height: 64px;
+  width: 769px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  color: #34313d;
+  mix-blend-mode: normal;
+  padding-left: 32px;
 }
 
-.btn-search{
-	height: 64px;
-width: 188px;
-border-radius: 10px;
-background: #2BD0D0;
-font-weight: 700;
-font-size: 20px;
-line-height: 30px;
-color: #FFFFFF;
+.btn-search {
+  height: 64px;
+  width: 188px;
+  border-radius: 10px;
+  background: #2bd0d0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
 }
 
-.btn-search:hover{
-	background: #9AE3E3;
-	color: #FFFFFF;
+.btn-search:hover {
+  background: #9ae3e3;
+  color: #ffffff;
 }
 
-#error-ms{
-	display: none;
-	font-weight: 500;
-font-size: 16px;
-line-height: 18px;
-letter-spacing: 0.109091px;
-color: #F46363;
-margin-top: 8px;
+#error-ms {
+  display: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.109091px;
+  color: #f46363;
+  margin-top: 8px;
 }
