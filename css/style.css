@@ -126,7 +126,7 @@ body {
   height: 168px;
   width: 1110px;
   border-radius: 10px;
-  margin: 140px 0 120px 0;
+  margin-top: 140px;
   background: #3a3054 url(../images/bg-shorten-desktop.svg);
 }
 
@@ -171,3 +171,82 @@ body {
   color: #f46363;
   margin-top: 8px;
 }
+
+.error-border {
+  border: 3px solid #f46363;
+}
+
+.orginal-url {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  color: #34313d;
+  word-wrap: break-word;
+}
+
+.shorted-url {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: right;
+  letter-spacing: 0.15px;
+  color: #2bd0d0;
+  border: none;
+}
+
+.shorted-url:focus-visible {
+  border: none;
+  outline: none;
+}
+
+.copy-btn {
+  background: #2bd0d0;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  color: #ffffff;
+  height: 40px;
+  width: 103px;
+}
+
+.copy-btn:hover {
+  background: #9ae3e3;
+  color: #ffffff;
+}
+
+.shorted-output {
+  margin-top: 24px;
+  visibility: hidden;
+}
+
+.copied {
+  background: #3a3054;
+  border: none;
+}
+
+.loading-content {
+  visibility:hidden;
+}
+
+.loading-content .rot {
+  height: 4rem;
+  width: 4rem;
+  border-right: 0.1rem solid #2acfcf;
+  border-radius: 50%;
+  animation: rotate 2s linear infinite forwards;
+}
+
+@keyframes rotate {
+  
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+
+}
+
+
