@@ -15,90 +15,189 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light nav-size">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Resources</a>
-          </li>
-        </ul>
-        <div class="d-flex">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
-            </li>
-          </ul>
-          <button class="btn btn-outline-info nav-btn" type="submit">Sign Up</button>
+
+
+
+  <header class="container top-container">
+    <div class="row d-flex justify-content-center">
+
+
+      <nav class="navbar navbar-expand-lg navbar-light nav-size">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Login</a>
+                </li>
+              </ul>
+              <button class="btn btn-outline-info nav-btn" type="submit">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="d-flex justify-content-beetween header-content">
+
+        <div class="col-md-7 top-left-box">
+          <h1>More than just shorter links</h1>
+          <p>Build your brand’s recognition and get detailed insights
+            on how your links are performing.</p>
+          <button type="button" class="btn">Get Started</button>
+        </div>
+
+        <div class="col-md-5 top-right-box"></div>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+
+    <div class="row d-flex justify-content-center">
+
+
+
+      <form class="row g-3 col-md-12 search-box d-flex justify-content-between align-items-center">
+
+        <div class="col-md-9 ps-5">
+          <input type="text" class="form-control inp-search" id="inp" autocomplete="off"
+            placeholder="Shorten a link here...">
+
+          <div id="error-ms"></div>
+        </div>
+
+        <div class="col-md-3 ps-5">
+          <input type="submit" class="btn btn-search" value="Shorten It!">
+        </div>
+
+      </form>
+
+      <div class="loading-content d-flex justify-content-center">
+        <div class="rot"></div>
+      </div>
+
+      <div class="col-md-12 d-flex justify-content-between align-items-center shorted-output">
+        <div class="col-md-4 text-start">
+          <p class="orginal-url"></p>
+        </div>
+        <div class="col-md-4 text-end">
+          <input value="" class="shorted-url"></input>
+        </div>
+        <button class="btn copy-btn col-md-2" onclick="copyFunction()">Copy</button>
+      </div>
+
+    </div>
+  </main>
+
+  <section class="container advanced">
+    <div class="row d-flex justify-content-center ">
+      <h1 class="advanced-h1">Advanced Statistics</h1>
+      <p class="advanced-p">Track how your links are performing across the web with our
+        advanced statistics dashboard.</p>
+    </div>
+
+    <div class="row d-flex justify-content-between">
+      <div class="blue-line"></div>
+      <div class="col-md-4 advanced-boxes">
+        <div class="content">
+          <div class="icon icon-1"></div>
+          <h2>Brand Recognition</h2>
+          <p>Boost your brand recognition with each click. Generic links don’t
+            mean a thing. Branded links help instil confidence in your content.</p>
+        </div>
+      </div>
+      <div class="col-md-4 advanced-boxes Detailed-box">
+        <div class="content">
+          <div class="icon icon-2"></div>
+          <h2>Detailed Records</h2>
+          <p>Gain insights into who is clicking your links. Knowing when and where
+            people engage with your content helps inform better decisions.</p>
+        </div>
+      </div>
+      <div class="col-md-4 advanced-boxes Fully-box">
+        <div class="content">
+          <div class="icon icon-3"></div>
+          <h2>Fully Customizable</h2>
+          <p>Improve brand awareness and content discoverability through customizable
+            links, supercharging audience engagement.</p>
         </div>
       </div>
     </div>
-  </nav>
 
+  </section>
 
-  <main class="container top-container">
-    <div class="row">
+  <section class="container-fluid boost text-center">
+    <h1>Boost your links today</h1>
+    <button class="btn">Get Started</button>
+  </section>
 
-      <div class="col-md-6 top-left-box">
-        <h1>More than just shorter links</h1>
-        <p>Build your brand’s recognition and get detailed insights
-          on how your links are performing.</p>
-        <button type="button" class="btn">Get Started</button>
+  <footer>
+
+    <div class="row row-cols-6 ">
+      <div class="col">
+        <a href="#" class="d-flex align-items-center mb-3 text-decoration-none footer-logo"></a>
       </div>
 
-      <div class="col-md-6 top-right-box"></div>
+      <div class="col">
+      </div>
+
+      <div class="col">
+        <h5 class="mb-4">Features</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 footer-link">Link Shortening</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 footer-link">Branded Links</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 footer-link">Analytics</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5 class="mb-4">Resources</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 footer-link">Blog</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 footer-link">Developers</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 footer-link">Support</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5 class="mb-4">Company</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 footer-link">About</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 footer-link">Our Team</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 footer-link">Careers</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <ul class="nav flex-row">
+          <li class="nav-item ms-3"><a href="#" class="nav-link p-0 footer-icon face-book"></a></li>
+          <li class="nav-item ms-3"><a href="#" class="nav-link p-0 footer-icon twitter"></a></li>
+          <li class="nav-item ms-3"><a href="#" class="nav-link p-0 footer-icon pinterest"></a></li>
+          <li class="nav-item ms-3"><a href="#" class="nav-link p-0 footer-icon instagram"></a></li>
+        </ul>
+      </div>
     </div>
 
-
-
-
-    <form class="row g-3 col-md-12 search-box d-flex justify-content-between align-items-center">
-
-      <div class="col-md-9 ps-5">
-        <input type="text" class="form-control inp-search" id="inp" autocomplete="off"
-          placeholder="Shorten a link here...">
-
-        <div id="error-ms"></div>
-      </div>
-
-      <div class="col-md-3 ps-5">
-        <input type="submit" class="btn btn-search" value="Shorten It!">
-      </div>
-
-    </form>
-
-    
-      <div class="loading-content d-flex justify-content-center my-3">
-        <div class="rot"></div>
-      </div>
-    
-
-    <div class="col-md-12 d-flex justify-content-between align-items-center shorted-output">
-      <div class="col-md-4 text-start">
-        <p class="orginal-url"></p>
-      </div>
-      <div class="col-md-4 text-end">
-        <input value="" class="shorted-url"></input>
-      </div>
-      <button class="btn copy-btn col-md-2" onclick="copyFunction()">Copy</button>
-    </div>
-
-
-
-
-
-  </main>
+  </footer>
 
 
   <script src="js/bootstrap.bundle.min.js"></script>
