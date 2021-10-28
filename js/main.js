@@ -16,7 +16,7 @@ input.addEventListener('focus',
 function handleSubmit(e) {
 	e.preventDefault();
 
-	load.style.visibility = "visible";
+	load.style.display = "block"
 
 	ValidURL(input.value);
 }
@@ -39,7 +39,7 @@ function ValidURL(str) {
 
 function errorMessage(message) {
 
-	load.style.visibility = "hidden";
+	load.style.display = "none";
 
 	errorDiv.style.display = "block";
 

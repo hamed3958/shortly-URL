@@ -10,17 +10,15 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Shortly URL shortening API Challenge</title>
+  <title>Shortly URL shortening API</title>
 </head>
 
 <body>
 
+  <!-- ------------------------------------------------------header---------------------------------------- -->
 
-
-
-  <header class="container top-container">
-    <div class="row d-flex justify-content-center">
-
+  <header class="container top-container d-flex flex-wrap justify-content-center align-items-start">
+    <div class="row d-flex flex-wrap justify-content-center align-items-center">
 
       <nav class="navbar navbar-expand-lg navbar-light nav-size">
         <div class="container-fluid">
@@ -69,11 +67,11 @@
 
   </header>
 
+  <!-- -------------------------------------------------------main--------------------------------------- -->
+
   <main>
 
-    <div class="row d-flex justify-content-center">
-
-
+    <div class="row d-flex justify-content-center main-row">
 
       <form class="row g-3 col-md-12 search-box d-flex justify-content-between align-items-center">
 
@@ -90,13 +88,13 @@
 
       </form>
 
-      <div class="loading-content d-flex justify-content-center">
-        <div class="rot"></div>
+      <div class="loading-content ">
+        <div class="rot mx-auto mb-5"></div>
       </div>
 
-      <div class="col-md-12 d-flex justify-content-between align-items-center shorted-output">
+      <div class="col-md-12 d-flex justify-content-between align-items-center shorted-output px-4">
         <div class="col-md-4 text-start">
-          <p class="orginal-url"></p>
+          <p class="orginal-url pt-2"></p>
         </div>
         <div class="col-md-4 text-end">
           <input value="" class="shorted-url"></input>
@@ -106,6 +104,8 @@
 
     </div>
   </main>
+
+  <!-- ---------------------------------------------------advanced section----------------------------------- -->
 
   <section class="container advanced">
     <div class="row d-flex justify-content-center ">
@@ -144,16 +144,25 @@
 
   </section>
 
+  <!-- -----------------------------------------------------boost section-------------------------------- -->
+
   <section class="container-fluid boost text-center">
     <h1>Boost your links today</h1>
     <button class="btn">Get Started</button>
   </section>
 
+  <!-- ---------------------------------------------------------footer------------------------------------- -->
+
   <footer>
 
     <div class="row row-cols-6 ">
       <div class="col">
-        <a href="#" class="d-flex align-items-center mb-3 text-decoration-none footer-logo"></a>
+        <a href="#" class="d-flex align-items-center mb-5 text-decoration-none footer-logo"></a>
+
+        <p class="author">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+            Mentor</a>.</p>
+        <p class="author"> Coded by <a href="http://hamedasadiasl.ir" target="_blank">Hamed Asadi Asl</a>.</p>
+
       </div>
 
       <div class="col">
@@ -199,6 +208,7 @@
 
   </footer>
 
+  <!-- ------------------------------------------------script-------------------------------------------- -->
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
