@@ -40,8 +40,9 @@
                 <a class="nav-link" href="#">Resources</a>
               </li>
             </ul>
-            <div class="d-flex">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <hr class="nav-hr">
+            <div class="d-flex signup-box">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 login">
                 <li class="nav-item">
                   <a class="nav-link" href="#">Login</a>
                 </li>
@@ -52,7 +53,7 @@
         </div>
       </nav>
 
-      <div class="d-flex justify-content-beetween header-content">
+      <div class="row d-flex justify-content-beetween header-content">
 
         <div class="col-md-7 top-left-box">
           <h1>More than just shorter links</h1>
@@ -71,19 +72,19 @@
 
   <main>
 
-    <div class="row d-flex justify-content-center main-row">
+    <div class="row d-flex justify-content-between">
 
       <form class="row g-3 col-md-12 search-box d-flex justify-content-between align-items-center">
 
-        <div class="col-md-9 ps-5">
+        <div class="col-md-9 ps-md-5 search-holder">
           <input type="text" class="form-control inp-search" id="inp" autocomplete="off"
             placeholder="Shorten a link here...">
 
           <div id="error-ms"></div>
         </div>
 
-        <div class="col-md-3 ps-5">
-          <input type="submit" class="btn btn-search" value="Shorten It!">
+        <div class="col-md-3 ps-md-5 search-holder">
+          <input type="submit" class="btn btn-search " value="Shorten It!">
         </div>
 
       </form>
@@ -96,6 +97,7 @@
         <div class="col-md-4 text-start">
           <p class="orginal-url pt-2"></p>
         </div>
+        <hr class="shorted-hr">
         <div class="col-md-4 text-end">
           <input value="" class="shorted-url"></input>
         </div>
@@ -114,8 +116,9 @@
         advanced statistics dashboard.</p>
     </div>
 
-    <div class="row d-flex justify-content-between">
-      <div class="blue-line"></div>
+    <div class="row d-flex justify-content-between box-holder">
+      <span class="blue-line"></span>
+      <!-- <span class="blue-line-mobile"></span> -->
       <div class="col-md-4 advanced-boxes">
         <div class="content">
           <div class="icon icon-1"></div>
@@ -155,8 +158,8 @@
 
   <footer>
 
-    <div class="row row-cols-6 ">
-      <div class="col">
+    <div class="row row-cols-6 mobile-footer">
+      <div class="col footer-box">
         <a href="#" class="d-flex align-items-center mb-5 text-decoration-none footer-logo"></a>
 
         <p class="author">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
@@ -168,7 +171,7 @@
       <div class="col">
       </div>
 
-      <div class="col">
+      <div class="col footer-box">
         <h5 class="mb-4">Features</h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-3"><a href="#" class="nav-link p-0 footer-link">Link Shortening</a></li>
@@ -177,7 +180,7 @@
         </ul>
       </div>
 
-      <div class="col">
+      <div class="col footer-box">
         <h5 class="mb-4">Resources</h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-3"><a href="#" class="nav-link p-0 footer-link">Blog</a></li>
@@ -186,7 +189,7 @@
         </ul>
       </div>
 
-      <div class="col">
+      <div class="col footer-box">
         <h5 class="mb-4">Company</h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-3"><a href="#" class="nav-link p-0 footer-link">About</a></li>
@@ -196,7 +199,7 @@
         </ul>
       </div>
 
-      <div class="col">
+      <div class="col footer-box">
         <ul class="nav flex-row">
           <li class="nav-item ms-3"><a href="#" class="nav-link p-0 footer-icon face-book"></a></li>
           <li class="nav-item ms-3"><a href="#" class="nav-link p-0 footer-icon twitter"></a></li>
