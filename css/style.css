@@ -329,16 +329,6 @@ main {
   z-index: -1;
 }
 
-/* .blue-line-mobile {
-  position: relative;
-  height: 1014px;
-    width: 8px !important;
-  display: none;
-  z-index: -1;
-  background: #2bd0d0;
-  left: 50%;
-} */
-
 .advanced-boxes {
   margin-top: 90px;
   padding: 32px;
@@ -706,6 +696,10 @@ footer {
     line-height: 24px;
   }
 
+  .loading-content {
+    margin-top: 0;
+  }
+
   /*******************************advanced (MQ)*****************************/
 
   .advanced {
@@ -731,29 +725,20 @@ footer {
     display: none;
   }
 
-  /* .blue-line-mobile {
-    display: inline;
-    position: relative;
-    left: 50%;
-    top: 220%;
-    height: 1014px;
-    width: 8px;
-    background: #2bd0d0;
-    z-index: -1 !important;
-  } */
-
   .advanced-boxes {
     height: 267px;
     width: 327px;
+    z-index: 1;
   }
 
   .box-holder {
     flex-flow: column;
     text-align: center;
+   
   }
 
   .icon {
-    transform: translateX(113%);
+    transform: translateX(114%);
   }
 
   /************************boost*********/
