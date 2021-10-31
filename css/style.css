@@ -39,7 +39,7 @@ body {
 
 .top-container {
   height: 800px;
-  min-width: 100%;
+  max-width: 100%;
   background-color: #ffffff;
 }
 
@@ -508,14 +508,12 @@ footer {
 
 /* **********************************Media query***************************************** */
 
-@media (max-width: 1441px) {
+@media (max-width: 1400px) {
   body {
     min-height: auto;
     max-width: 375px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+    max-width: none;
   }
 
   .top-container {
@@ -744,7 +742,6 @@ footer {
     z-index: -1 !important;
   } */
 
- 
   .advanced-boxes {
     height: 267px;
     width: 327px;
@@ -754,8 +751,6 @@ footer {
     flex-flow: column;
     text-align: center;
   }
-
-
 
   .icon {
     transform: translateX(113%);
@@ -775,40 +770,37 @@ footer {
     letter-spacing: -0.7px;
   }
 
-/*********************************footer (Mq)*************************************/
+  /*********************************footer (Mq)*************************************/
 
-footer {
-  height: auto;
-  width: 375px;
-  padding: 0;
-  
-}
+  footer {
+    height: auto;
+    width: 375px;
+    padding: 0;
+  }
 
-.mobile-footer{
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: center;
- text-align: center;
-}
+  .mobile-footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
 
-.footer-logo{
-  margin: 40px 0 20px 0 !important;
-}
+  .footer-logo {
+    margin: 40px 0 20px 0 !important;
+  }
 
-.footer-box{
-  height: auto;
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 40px;
-}
+  .footer-box {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
 
-.author{
-  margin: 0;
-}
-
-
+  .author {
+    margin: 0;
+  }
 }
