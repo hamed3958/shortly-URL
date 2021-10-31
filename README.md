@@ -19,7 +19,7 @@ Users should be able to:
 
 ## Links
 
-- Live Site URL: [Shortly URL]()
+- Live Site URL: [Shortly URL](https://hamed3958.github.io/shortly-URL/)
 
 ### Built with
 
