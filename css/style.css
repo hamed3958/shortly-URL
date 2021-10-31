@@ -52,7 +52,6 @@ body {
 .navbar-brand {
   height: 32.67399978637695px;
   width: 120.04266357421875px;
-
   background: url(../images/logo.svg) no-repeat center;
 }
 
@@ -506,22 +505,24 @@ footer {
 @media (max-width: 1400px) {
   body {
     min-height: auto;
-    max-width: 375px;
     overflow-x: hidden !important;
     max-width: none;
   }
 
   .top-container {
     height: 927px;
+    overflow-x: hidden;
   }
 
   .header-content {
     flex-direction: column;
     justify-content: space-around;
+    max-width: 375px;
   }
 
   .nav-size {
     margin-top: 40px;
+    max-width: 375px;
   }
 
   .navbar-collapse {
@@ -576,10 +577,6 @@ footer {
     line-height: 27px;
   }
 
-  .header-content {
-    max-width: 327px;
-  }
-
   .top-left-box {
     order: 2;
     margin-top: 290px;
@@ -593,7 +590,7 @@ footer {
     letter-spacing: -1.05px;
     height: 96px;
     max-width: 327px;
-    margin-top: 37px;
+    margin-top: 63px;
   }
 
   .top-left-box > p {
@@ -613,13 +610,12 @@ footer {
     transform: translateY(0);
     order: 1;
     margin-top: 23px;
-    overflow-x: visible;
   }
 
   .top-right-box::after {
-    height: 270px;
-    width: 327px;
-    background-size: cover;
+    height: 337px;
+    width: 551px;
+    background-size: contain;
   }
 
   /*********************main (MQ)**********************************/
@@ -709,7 +705,7 @@ footer {
 
   .advanced {
     height: auto;
-    width: 327px;
+    width: 375px;
     align-content: center;
   }
 
@@ -731,7 +727,15 @@ footer {
     height: 1014px;
     width: 8px;
     top: 50px;
-    left: 53%;
+    left: 50%;
+  }
+
+  .box-holder {
+    justify-content: center !important;
+  }
+
+  .content {
+    text-align: center;
   }
 
   .advanced-boxes {
@@ -740,13 +744,8 @@ footer {
     z-index: 1;
   }
 
-  .box-holder {
-    flex-flow: column;
-    text-align: center;
-  }
-
   .icon {
-    transform: translateX(114%);
+    transform: translateX(100%);
   }
 
   /************************boost*********/
@@ -795,5 +794,6 @@ footer {
 
   .author {
     margin: 0;
+    margin-bottom: 5px;
   }
 }

@@ -91,11 +91,4 @@ function copyFunction() {
 	copyText.setSelectionRange(0, 99999);
 	// navigator.clipboard.writeText(copyText.value);
 	document.execCommand("copy");
-
-
 }
-
-// copyText.forEach((link)=>{
-// 	link.select();
-// })
-// document.execCommand('copy'); 
