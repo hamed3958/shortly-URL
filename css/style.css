@@ -321,11 +321,16 @@ main {
 
 .blue-line {
   position: relative;
+}
+
+.blue-line::before {
+  content: "";
   height: 8px;
-  width: 1110px;
-  top: 250px;
-  margin-left: auto;
+  width: 1050px;
   background: #2bd0d0;
+  position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 250px;
+  margin: 0;
   z-index: -1;
 }
 
@@ -721,8 +726,12 @@ footer {
     letter-spacing: 0.109091px;
   }
 
-  .blue-line {
-    display: none;
+  .blue-line::before {
+    content: "";
+    height: 1014px;
+    width: 8px;
+    top: 50px;
+    left: 53%;
   }
 
   .advanced-boxes {
@@ -734,7 +743,6 @@ footer {
   .box-holder {
     flex-flow: column;
     text-align: center;
-   
   }
 
   .icon {
