@@ -11,6 +11,7 @@ input.addEventListener('focus',
 		errorDiv.innerHTML = "";
 		errorDiv.style.display = "none";
 		input.classList.remove("error-border");
+		document.querySelector('.shorted-output').style.visibility = "hidden";
 	});
 
 function handleSubmit(e) {
