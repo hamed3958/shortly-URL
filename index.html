@@ -17,151 +17,155 @@
 
   <!-- ------------------------------------------------------header---------------------------------------- -->
 
-  <header class="container top-container d-flex flex-wrap justify-content-center align-items-start">
-    <div class="row d-flex flex-wrap justify-content-center align-items-center">
+  <div class="container px-5 top">
+    <nav class="navbar navbar-expand-lg navbar-light px-xxl-5 nav-size">
 
-      <nav class="navbar navbar-expand-xxl navbar-light nav-size">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-xxl-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#Features">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Pricing">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Resources">Resources</a>
-              </li>
-            </ul>
-            <hr class="nav-hr">
-            <div class="d-flex signup-box">
-              <ul class="navbar-nav me-auto mb-2 mb-xxl-0 login">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Login</a>
-                </li>
-              </ul>
-              <button class="btn btn-outline-info nav-btn" type="submit">Sign Up</button>
-            </div>
-          </div>
+      <a class=" navbar-brand navbar-logo" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-xxl-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#Features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Resources">Resources</a>
+          </li>
+        </ul>
+        <hr class="nav-hr">
+        <div class="d-flex signup-box">
+          <ul class="navbar-nav me-auto mb-2 mb-xxl-0 login">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+          </ul>
+          <button class="btn btn-outline-info nav-btn" type="submit">Sign Up</button>
         </div>
-      </nav>
+      </div>
 
-      <div class="row d-flex justify-content-beetween header-content">
+    </nav>
+
+
+    <header class="row top-container ">
+
+      <div class="row header-content px-xxl-5">
 
         <div class="col-xxl-7 top-left-box">
           <h1>More than just shorter links</h1>
           <p>Build your brand’s recognition and get detailed insights
             on how your links are performing.</p>
-          <button type="button" class="btn">Get Started</button>
+          <div class="top-btn">
+            <button type="button" class="btn">Get Started</button>
+          </div>
         </div>
 
         <div class="col-xxl-5 top-right-box"></div>
       </div>
-    </div>
 
-    <div id="Features"></div>
 
-  </header>
-
+    </header>
+  </div>
   <!-- -------------------------------------------------------main--------------------------------------- -->
 
-  <main>
+  <main class="container px-5">
 
-    <div class="row d-flex justify-content-center">
+    <form class="row search-box justify-content-around align-content-around mx-lxx-5">
 
-      <form class="row g-3 col-xxl-12 search-box d-flex justify-content-between align-items-center">
-
-        <div class="col-xxl-9 ps-xxl-5 search-holder">
-          <input type="text" class="form-control inp-search" id="inp" autocomplete="off"
-            placeholder="Shorten a link here...">
-
-          <div id="error-ms"></div>
-        </div>
-
-        <div class="col-xxl-3 ps-xxl-5 search-holder">
-          <input type="submit" class="btn btn-search " value="Shorten It!">
-        </div>
-
-      </form>
-
-      <div class="loading-content ">
-        <div class="rot mx-auto mb-5"></div>
+      <div class="col-xl-9">
+        <input type="text" class="form-control inp-search " id="inp" autocomplete="off"
+          placeholder="Shorten a link here...">
       </div>
 
-      <div class="col-xxl-12 d-flex justify-content-between align-items-center shorted-output px-4">
-        <div class="col-xxl-4 text-start">
-          <p class="orginal-url pt-2"></p>
-        </div>
-        <hr class="shorted-hr">
-        <div class="col-xxl-4 text-end">
-          <input value="" class="shorted-url"></input>
-        </div>
+      <div id="error-ms"></div>
+
+      <div class="col-xl-2 d-flex justify-content-center">
+        <button type="submit" class="btn btn-search">Shorten It!</button>
+      </div>
+
+    </form>
+
+    <div class="loading-content col-xxl-12">
+      <div class="rot mx-auto mb-5"></div>
+    </div>
+
+
+    <div class="row shorted-output  justify-content-around p-3">
+      <div class="col-xxl-5 text-start">
+        <p class="text-start orginal-url d-inline pt-2"></p>
+      </div>
+      <hr class="shorted-hr my-1">
+      <div class="col-xxl-5 d-flex justify-content-between align-items-center">
+        <input value="" class="shorted-url"></input>
         <button class="btn copy-btn col-xxl-2" onclick="copyFunction()">Copy</button>
       </div>
 
     </div>
+
   </main>
 
   <!-- ---------------------------------------------------advanced section----------------------------------- -->
 
-  <section class="container justify-content-center advanced" id="Pricing">
-    <div class="row d-flex justify-content-center align-content-center ">
+  <section class="container advanced px-5" id="Pricing">
+    <div class="row text-center justify-content-around">
+
       <h1 class="advanced-h1">Advanced Statistics</h1>
-      <p class="advanced-p">Track how your links are performing across the web with our
+      <p class="advanced-p ">Track how your links are performing across the web with our
         advanced statistics dashboard.</p>
-    </div>
 
-    <div class="row d-flex justify-content-between align-content-center box-holder">
-      <div class="blue-line"></div>
-      <div class="col-xxl-4 advanced-boxes">
-        <div class="content">
-          <div class="icon icon-1"></div>
-          <h2>Brand Recognition</h2>
-          <p>Boost your brand recognition with each click. Generic links don’t
-            mean a thing. Branded links help instil confidence in your content.</p>
-        </div>
-      </div>
-      <div class="col-xxl-4 advanced-boxes Detailed-box">
-        <div class="content">
-          <div class="icon icon-2"></div>
-          <h2>Detailed Records</h2>
-          <p>Gain insights into who is clicking your links. Knowing when and where
-            people engage with your content helps inform better decisions.</p>
-        </div>
-      </div>
-      <div class="col-xxl-4 advanced-boxes Fully-box">
-        <div class="content">
-          <div class="icon icon-3"></div>
-          <h2>Fully Customizable</h2>
-          <p>Improve brand awareness and content discoverability through customizable
-            links, supercharging audience engagement.</p>
-        </div>
-      </div>
-    </div>
 
+        <div class="advanced-section">
+          <span class="blue-line"></span>
+
+        <div class="col-xxl-4 advanced-boxes">
+          <div class="content">
+            <div class="icon icon-1"></div>
+            <h2>Brand Recognition</h2>
+            <p>Boost your brand recognition with each click. Generic links don’t
+              mean a thing. Branded links help instil confidence in your content.</p>
+          </div>
+        </div>
+        <div class="col-xxl-4 advanced-boxes Detailed-box">
+          <div class="content">
+            <div class="icon icon-2"></div>
+            <h2>Detailed Records</h2>
+            <p>Gain insights into who is clicking your links. Knowing when and where
+              people engage with your content helps inform better decisions.</p>
+          </div>
+        </div>
+        <div class="col-xxl-4 advanced-boxes Fully-box">
+          <div class="content">
+            <div class="icon icon-3"></div>
+            <h2>Fully Customizable</h2>
+            <p>Improve brand awareness and content discoverability through customizable
+              links, supercharging audience engagement.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
   </section>
 
   <!-- -----------------------------------------------------boost section-------------------------------- -->
 
-  <section class="container-fluid boost text-center" id="Resources">
-    <h1>Boost your links today</h1>
-    <button class="btn">Get Started</button>
+  <section class="container boost " id="Resources">
+    <div class="row justify-content-center">
+      <h1>Boost your links today</h1>
+      <button class="btn">Get Started</button>
+    </div>
   </section>
 
   <!-- ---------------------------------------------------------footer------------------------------------- -->
 
-  <footer>
+  <footer class="container px-5">
 
-    <div class="row row-cols-6 mobile-footer">
-      <div class="col footer-box">
-        <a href="#" class="d-flex align-items-center mb-5 text-decoration-none footer-logo"></a>
+    <div class="row px-5 footer-mobile">
+      <div class="col ps-xl-5">
+        <span class="d-flex align-items-center mb-5 text-decoration-none footer-logo"></span>
 
         <p class="author">Challenge by : <br>
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
@@ -176,7 +180,7 @@
       <div class="col">
       </div>
 
-      <div class="col footer-box">
+      <div class="col">
         <h5 class="mb-4">Features</h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-3"><a href="#" class="nav-link p-0 footer-link">Link Shortening</a></li>
@@ -185,7 +189,7 @@
         </ul>
       </div>
 
-      <div class="col footer-box">
+      <div class="col">
         <h5 class="mb-4">Resources</h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-3"><a href="#" class="nav-link p-0 footer-link">Blog</a></li>
@@ -194,7 +198,7 @@
         </ul>
       </div>
 
-      <div class="col footer-box">
+      <div class="col">
         <h5 class="mb-4">Company</h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-3"><a href="#" class="nav-link p-0 footer-link">About</a></li>
@@ -204,12 +208,12 @@
         </ul>
       </div>
 
-      <div class="col footer-box">
-        <ul class="nav flex-row">
-          <li class="nav-item ms-3"><a href="#" class="nav-link p-0 footer-icon face-book"></a></li>
-          <li class="nav-item ms-3"><a href="#" class="nav-link p-0 footer-icon twitter"></a></li>
-          <li class="nav-item ms-3"><a href="#" class="nav-link p-0 footer-icon pinterest"></a></li>
-          <li class="nav-item ms-3"><a href="#" class="nav-link p-0 footer-icon instagram"></a></li>
+      <div class="col pe-lg-5">
+        <ul class="nav flex-row justify-content-between">
+          <li class="nav-item p-1"><a href="#" class="nav-link p-0 footer-icon face-book"></a></li>
+          <li class="nav-item p-1"><a href="#" class="nav-link p-0 footer-icon twitter"></a></li>
+          <li class="nav-item p-1"><a href="#" class="nav-link p-0 footer-icon pinterest"></a></li>
+          <li class="nav-item p-1"><a href="#" class="nav-link p-0 footer-icon instagram"></a></li>
         </ul>
       </div>
     </div>
