@@ -59,7 +59,9 @@
           <h1>More than just shorter links</h1>
           <p>Build your brand’s recognition and get detailed insights
             on how your links are performing.</p>
+            <div class="top-btn">
           <button type="button" class="btn">Get Started</button>
+        </div>
         </div>
 
         <div class="col-xxl-5 top-right-box"></div>
@@ -72,20 +74,19 @@
 
   <main class="container px-5">
 
+    <form class="row search-box justify-content-around align-content-around mx-lxx-5">
 
-    <form class="row search-box justify-content-around align-content-center mx-5">
-
-      <div class="col-9">
+      <div class="col-xl-9">
         <input type="text" class="form-control inp-search " id="inp" autocomplete="off"
           placeholder="Shorten a link here...">
       </div>
 
-      <div class="col-2">
-        <button type="submit" class="btn btn-search ">Shorten It!</button>
-
-      </div>
-
       <div id="error-ms"></div>
+
+      <div class="col-xl-2 d-flex justify-content-center">
+        <button type="submit" class="btn btn-search">Shorten It!</button>
+      </div>
+      
     </form>
 
     <div class="loading-content col-xxl-12">
@@ -93,15 +94,16 @@
     </div>
 
 
-    <div class="row shorted-output mx-5 justify-content-around py-2">
+    <div class="row shorted-output  justify-content-around p-3">
       <div class="col-xxl-5 text-start">
         <p class="text-start orginal-url d-inline pt-2"></p>
       </div>
-      <hr class="shorted-hr">
-      <div class="col-xxl-5 text-end">
+      <hr class="shorted-hr my-1">
+      <div class="col-xxl-5 d-flex justify-content-between align-items-center">
         <input value="" class="shorted-url"></input>
+        <button class="btn copy-btn col-xxl-2" onclick="copyFunction()">Copy</button>
       </div>
-      <button class="btn copy-btn col-xxl-2" onclick="copyFunction()">Copy</button>
+      
     </div>
 
   </main>
